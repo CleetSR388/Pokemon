@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update () { 
 
-        if(!isMoving && isAllowedToMove)
+        if(!isMoving && isAllowedToMove == true)
         {
             input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
